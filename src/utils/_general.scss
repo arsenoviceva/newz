@@ -1,0 +1,10 @@
+@import './components/variables';
+@import './components/button';
+@import './components/card';
+@import './components/carousel';
+
+body{
+     background-color: $secondary;
+}
+@import '~bootstrap/scss/bootstrap';
+@import "bootstrap-icons/font/bootstrap-icons.css";
