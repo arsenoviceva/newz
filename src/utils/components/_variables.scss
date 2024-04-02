@@ -2,9 +2,11 @@
 
 /* make the customizations */
 $secondary: #E5E9EC;
+$primary: #3D5C6E;
+$smalltitle: #777777;
 
 $theme-colors: (
-  'primary': #3D5C6E,
+  'primary': $primary,
   'secondary': $secondary,
   'danger': teal,
   

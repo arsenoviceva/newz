@@ -1,0 +1,12 @@
+.top-right-icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    @extend .top-right-badge;
+}
+
+.top-right-badge{
+    top: -5px;
+    right: -5px;
+    @extend .position-absolute, .bg-primary;
+}

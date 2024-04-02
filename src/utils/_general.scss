@@ -2,9 +2,13 @@
 @import './components/button';
 @import './components/card';
 @import './components/carousel';
+@import './components/typography';
+@import './components/container';
+@import './components/icons';
 
 body{
-     background-color: $secondary;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fff;
+    //  background-color: $secondary;
 }
-@import '~bootstrap/scss/bootstrap';
 @import "bootstrap-icons/font/bootstrap-icons.css";
