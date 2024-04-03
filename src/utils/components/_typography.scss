@@ -1,3 +1,8 @@
+h1,h2,h3,h4,h5,h6{
+    @extend .mb-0;
+}
+
+
 #navbar-typography{
     .active{
         color: $primary;
@@ -7,6 +12,9 @@
 .fs-10px{
     font-size: 10px;
 }
+.fs-20px{
+    font-size: 20px;
+}
 
 #header-typography{
     h6{
@@ -14,6 +22,21 @@
     }
 }
 
-#largeCardTitle{
-    font-family: "Gloock", serif;
+.title-without-corner{
+    // width: 100%;
+    width: fit-content;
+    // min-height: 100%;
+    padding: 5px 20px 5px 5px;
+    color: $white;
+    -webkit-clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 0, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 0, 75% 0);
+    background: $primary;
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+    &.danger{
+        background: $danger;
+    }
 }
+
+

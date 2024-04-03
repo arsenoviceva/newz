@@ -6,9 +6,15 @@
 @import './components/container';
 @import './components/icons';
 
+
 body{
     font-family: "Nunito Sans", sans-serif;
     background-color: #fff;
     //  background-color: $secondary;
 }
+
+.row{
+    @extend .w-100, .m-0;
+}
+
 @import "bootstrap-icons/font/bootstrap-icons.css";
