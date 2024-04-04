@@ -5,13 +5,13 @@ import { SlArrowRight } from "react-icons/sl";
 
 export const LatestNews = () => {
     return (
-        <Container >
+        < >
             <Row>
-                <Col md={12}>
-                    <h6> LATEST NEWS </h6>
+                <Col md={12} >
+                    <a href="" className="text-decoration-none fs-20px">LATEST NEWS <SlArrowRight className="fs-20px" /> </a>
                 </Col>
                 <Row className="my-4">
-                    <Col md={6}>
+                    <Col md={6} className="ps-md-0">
                         <LatestNewsCarousel />
                     </Col>
                     <Col md={6}>
@@ -23,11 +23,11 @@ export const LatestNews = () => {
                         <hr />
                         <SmallCard badgeTitle={'MARKET'} />
                         <hr />
-                        <a href="" className="text-decoration-none">See all posts <SlArrowRight className="fs-10px" /> </a>
+                        <a href="" className="text-decoration-none fs-20px">See all posts <SlArrowRight className="fs-10px" /> </a>
                     </Col>
                 </Row>
             </Row>
-        </Container>
+        </>
 
     )
 }

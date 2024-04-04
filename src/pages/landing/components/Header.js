@@ -1,6 +1,5 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Logo from '../../../images/news-logo-2.png';
 import { LiaCalendarAlt } from "react-icons/lia";
 import { LiaCloudSunSolid } from "react-icons/lia";
 import { LiaEnvelopeSolid } from "react-icons/lia";
@@ -24,7 +23,7 @@ export const Header = () => {
                     <div className='row d-flex  align-items-center'>
 
                         <div className="col-lg-4 m-0 p-0 ">
-                            <img className="img-fluid m-o p-0" src={'/images/news-logo-2.png'} />
+                            <img className="img-fluid m-o p-0" src='/images/news-logo-2.png' />
                         </div>
 
                         <div className='col-lg-3 d-flex gap-3'>

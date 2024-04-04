@@ -10,7 +10,7 @@ export const LatestNewsCarousel = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='/images/news.jpg'
+                    src='/images/carousel.jpg'
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -21,7 +21,7 @@ export const LatestNewsCarousel = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='/images/news.jpg'
+                    src='/images/carousel.jpg'
                     alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -32,7 +32,7 @@ export const LatestNewsCarousel = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='/images/news.jpg'
+                    src='/images/carousel.jpg'
                     alt="Third slide"
                 />
                 <Carousel.Caption>

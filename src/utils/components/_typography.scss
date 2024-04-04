@@ -15,6 +15,10 @@ h1,h2,h3,h4,h5,h6{
 .fs-20px{
     font-size: 20px;
 }
+.fs-25px{
+    font-size: 25px;
+}
+
 
 #header-typography{
     h6{
@@ -38,5 +42,22 @@ h1,h2,h3,h4,h5,h6{
         background: $danger;
     }
 }
+.social-icons-f{
+    color: #0E69F8;
+    @extend .fs-20px
 
+}
+.social-icons-t{
+    color: #03CBFF;
+    @extend .fs-20px
+
+}
+.social-icons-i{
+    color: #FF037B;
+    @extend .fs-20px
+}
+.social-icons-y{
+    color: #C60000;
+    @extend .fs-20px
+}
 

@@ -8,8 +8,9 @@ import { MediumCard } from './components/MediumCard';
 import { SampleBanner } from './components/SampleBanner'
 import { Col, Row } from 'react-bootstrap';
 import { HorisontalLine } from './components/HorisontalLine';
-import { LatestNews } from './components/LatestNews';
-import { TrendingPosts } from './components/TrendingPosts';
+import { SmallNewsBlock } from './components/NewsBlock/SmallNewsBlock';
+import { NewsBlock } from './components/NewsBlock/NewsBlock';
+
 
 
 export const LandingPage = () => {
@@ -52,16 +53,11 @@ export const LandingPage = () => {
             <HorisontalLine />
             <SampleBanner />
             <HorisontalLine />
-            <Container>
-                <Row>
-                    <Col md={8}>
-                        <LatestNews />
-                    </Col>
-                    <Col md={4}>
-                        <TrendingPosts />
-                    </Col>
-                </Row>
-            </Container>
+            <SmallNewsBlock />
+
+            <HorisontalLine />
+            <NewsBlock />
+
 
 
 

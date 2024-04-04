@@ -1,13 +1,8 @@
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-
-
 import { LiaCalendarAlt } from "react-icons/lia";
 import { LiaComment } from "react-icons/lia";
 import { Badge } from 'react-bootstrap';
-
-
-
 
 
 
@@ -21,7 +16,7 @@ export const MediumCard = ({ isLive, badgeTitle }) => {
                 <Card.Header className="title-without-corner rounded-0" >{badgeTitle}</Card.Header>
             </div>
             <Card.Body className="px-0">
-                <Card.Title className="fs-4">The 6th session of the US Congress today</Card.Title>
+                <Card.Title className="fs-3">The 6th session of the US Congress today</Card.Title>
                 <Card.Text className="pt-3">
 
                     <div className="my-4 me-5 d-flex  align-items-center gap-2">
