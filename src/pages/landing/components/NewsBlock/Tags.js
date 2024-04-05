@@ -3,37 +3,37 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export const Tags = () => {
     return (
-        <Container className="border p-3">
-            <Row className="d-flex justify-content-between align-items-center gap-2">
-                <Col md={12}>
-                    <span className="border">
+        <Container className="border px-3 py-4">
+            <Row className="">
+                <Col md={12} className="d-flex flex-wrap align-items-center gap-2">
+                    <span className="tags">
                         Covid-19
                     </span>
-                    <span className="border bg-primary text-white">
+                    <span className="tags bg-primary text-white">
                         Bitcoin
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         NFT
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Elon Musk
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Google Cloud
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Crypto
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Marketplace
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Game Consoles
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Robotics
                     </span>
-                    <span className="border">
+                    <span className="tags">
                         Hackers
                     </span>
                 </Col>

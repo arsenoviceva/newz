@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 export const SimpleCard = ({ badgeTitle }) => {
     return (
-        <Card>
+        <Card id="simple-card">
             <Card.Img src="/images/smallcard2.jpg" alt="Card image" />
             <Card.ImgOverlay>
                 <Card.Header className="title-without-corner rounded-0" >{badgeTitle}</Card.Header>

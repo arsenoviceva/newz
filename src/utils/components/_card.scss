@@ -20,3 +20,26 @@
         width: 30%;
     }
 }
+#different-news{
+    position: relative;
+    .card-title.h5 {
+        position: absolute;
+        bottom: 20%;
+    }
+    .position{
+        position: absolute;
+        bottom: 3%;
+    }
+}
+
+#simple-card{
+    position: relative;
+    .card-header:first-child {
+        position: absolute;
+        bottom: 30%;
+    }
+    .card-title.h5 {
+        position: absolute;
+        bottom: 10%;
+    }
+}

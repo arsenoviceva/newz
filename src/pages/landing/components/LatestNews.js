@@ -15,13 +15,13 @@ export const LatestNews = () => {
                         <LatestNewsCarousel />
                     </Col>
                     <Col md={6}>
-                        <SmallCard badgeTitle={'NEWS'} />
+                        <SmallCard badgeTitle={'NEWS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Norway exempts visas for visitors from EU'} />
                         <hr />
-                        <SmallCard badgeTitle={'MARKET'} />
+                        <SmallCard badgeTitle={'MARKET'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'DOW lika a bull'} />
                         <hr />
-                        <SmallCard badgeTitle={'POLITICS'} />
+                        <SmallCard badgeTitle={'POLITICS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Sadabell ATM become popular in Ohio'} />
                         <hr />
-                        <SmallCard badgeTitle={'MARKET'} />
+                        <SmallCard badgeTitle={'MARKET'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'US accuses Russia of currency manipulation'} />
                         <hr />
                         <a href="" className="text-decoration-none fs-20px">See all posts <SlArrowRight className="fs-10px" /> </a>
                     </Col>

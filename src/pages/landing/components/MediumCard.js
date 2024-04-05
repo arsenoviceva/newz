@@ -10,8 +10,8 @@ export const MediumCard = ({ isLive, badgeTitle }) => {
     return (
         <Card className="mt-3 border-0 bg-white">
             <div className="d-flex gap-2">
-                {isLive && <Badge className="rounded-0 " bg='danger' >
-                    <span className="text-white p-0 align-items-center"> {'\u2022'} </span>LIVE
+                {isLive && <Badge className="rounded-0 d-flex align-items-center " bg='danger' >
+                    <span className="text-white p-0 "> {'\u2022'} </span>LIVE
                 </Badge>}
                 <Card.Header className="title-without-corner rounded-0" >{badgeTitle}</Card.Header>
             </div>

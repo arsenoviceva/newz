@@ -10,6 +10,9 @@ import { Col, Row } from 'react-bootstrap';
 import { HorisontalLine } from './components/HorisontalLine';
 import { SmallNewsBlock } from './components/NewsBlock/SmallNewsBlock';
 import { NewsBlock } from './components/NewsBlock/NewsBlock';
+import { TopVideosBlock } from './components/NewsBlock/TopVideosBlock';
+import { Columnists } from './components/Columnists';
+import { NewsBlockEnd } from './components/NewsBlock/NewsBlockEnd';
 
 
 
@@ -21,15 +24,14 @@ export const LandingPage = () => {
             <Header />
             <NavbarCollapse />
             <HorisontalLine isBolder />
-
             <BreakingNewsSlider />
             <Container>
                 <Row>
                     <Col md={6} className='border-end pe-4'>
-                        <LargeCard />
+                        <LargeCard isUser badgeTitle={'NEWS'} cardTitle={'Biden asks Congress for $33 bilion to support Ukraine'} />
                     </Col>
                     <Col md={6} className="ps-4">
-                        <LargeCard />
+                        <LargeCard isUser badgeTitle={'POLITICS'} cardTitle={'Putin preparing to starve parts of developing world'} />
                     </Col>
                 </Row>
             </Container>
@@ -38,25 +40,31 @@ export const LandingPage = () => {
                 <Row>
                     <Col md={4} className="border-end">
                         <MediumCard isLive badgeTitle={"POLITICS"} />
-
                     </Col>
                     <Col md={4} className="border-end">
-                        <MediumCard badgeTitle={"POLITICS"} />
+                        <MediumCard badgeTitle={"MARKET"} />
 
                     </Col>
                     <Col md={4}>
-                        <MediumCard badgeTitle={"POLITICS"} />
-
+                        <MediumCard badgeTitle={"ECONOMIC"} />
                     </Col>
                 </Row>
             </Container>
             <HorisontalLine />
-            <SampleBanner />
+            <SampleBanner imageUrl={'/images/banner.png'} />
             <HorisontalLine />
             <SmallNewsBlock />
-
             <HorisontalLine />
             <NewsBlock />
+            <TopVideosBlock />
+            <Columnists />
+            <HorisontalLine />
+            <SampleBanner imageUrl={'/images/largebanner1.jpg'} />
+            <HorisontalLine />
+            <NewsBlockEnd />
+
+
+
 
 
 

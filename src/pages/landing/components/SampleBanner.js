@@ -1,12 +1,15 @@
 
-import Container from 'react-bootstrap/Container';
+import { Container, Col, Row } from 'react-bootstrap';
 
-export const SampleBanner = () => {
+export const SampleBanner = ({ imageUrl }) => {
     return (
         <Container className="d-flex justify-content-center alignt-items-center">
+            <Row>
+                <img src={imageUrl} />
+            </Row>
 
 
-            <img src='/images/banner.png' />
+
         </Container>
 
     )

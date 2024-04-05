@@ -93,19 +93,20 @@ export const DifferentNews = () => {
                     <hr />
                     <SmallCardDet badgeTitle="TECHNOLOGY" />
                     <hr />
-
+<                   div id="different-news">
                     <Card>
                         <Card.Img src="/images/smallcard2.jpg" alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Header className="title-without-corner rounded-0" >BUSINESS</Card.Header>
-                            <Card.Title className="text-white">Real Estate in California</Card.Title>
-                            <div className="my-4 me-5 d-flex  align-items-center gap-2 text-white">
+                            <Card.Title className="text-white fs-2" >2022 NFL Craf predict: Sample Quarterbacks</Card.Title>
+                            <div className="position my-4 me-5 d-flex  align-items-center gap-2 text-white">
                                 <LiaCalendarAlt className="fs-5" /> Dec 14, 2022
                                 <LiaUserSolid className="fs-5 ms-4" /> By <strong>Admin</strong>
                                 <LiaComment className="fs-5 ms-4" /> 55 comments
                             </div>
                         </Card.ImgOverlay>
                     </Card>
+                    </div>
                     <hr />
                     <SmallCardDet badgeTitle="MARKET" />
                     <hr />

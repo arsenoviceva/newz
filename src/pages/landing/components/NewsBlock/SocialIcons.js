@@ -12,8 +12,8 @@ export const SocialIcons = () => {
     return (
         <Container className="border pt-3 my-3">
             <Row className="d-flex ">
-                <Col md={2} className="border-end" >
-                    <LiaFacebookF className="social-icons-f" />
+                <Col md={2} className="social-column" >
+                    <LiaFacebookF className="social-icons-f " />
 
                 </Col>
                 <Col md={10} >
@@ -23,7 +23,7 @@ export const SocialIcons = () => {
             </Row >
             <hr />
             <Row>
-                <Col md={2} className="border-end" >
+                <Col md={2} className="social-column" >
                     <LiaTwitter className="social-icons-t" />
 
                 </Col>
@@ -34,7 +34,7 @@ export const SocialIcons = () => {
             </Row >
             <hr />
             <Row>
-                <Col md={2} className="border-end" >
+                <Col md={2} className="social-column" >
                     <LiaInstagram className="social-icons-i" />
 
                 </Col>
@@ -44,8 +44,8 @@ export const SocialIcons = () => {
 
             </Row >
             <hr />
-            <Row>
-                <Col md={2} className="border-end" >
+            <Row className="pb-3">
+                <Col md={2} className="social-column" >
                     <LiaYoutube className="social-icons-y" />
 
                 </Col>

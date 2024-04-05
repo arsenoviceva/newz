@@ -4,33 +4,27 @@
         top: 0;
     }
 }
-/**.carousel-container {
-    position: relative;
-  }
-  
-  .carousel-control-top-right {
+#latest-news-carousel  {
+  position: relative;
+  .position{
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+    z-index: 1;
+    top:10%;
+    left: 5%;
   }
-  
-  .carousel-control-top-right .carousel-control-prev,
-  .carousel-control-top-right .carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.5);
+  .left{
+    position: absolute;
+    z-index: 1;
+    top:10%;
+    right: 13%;
+
   }
-  
-  .carousel-control-top-right .carousel-control-prev-icon,
-  .carousel-control-top-right .carousel-control-next-icon {
-    filter: invert(1);
+  .right{
+    position: absolute;
+    z-index: 1;
+    top:10%;
+    right: 5%;
   }
-  
-  .carousel-control-top-right .carousel-control-prev {
-    left: auto;
-    right: 50px;
-  }
-  
-  .carousel-control-top-right .carousel-control-next {
-    left: auto;
-    right: 0;
-  }*/
+
+
+}

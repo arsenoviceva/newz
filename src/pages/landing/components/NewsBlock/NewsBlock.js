@@ -9,7 +9,7 @@ export const NewsBlock = () => {
                 <Col md={9}>
                     <DifferentNews />
                 </Col>
-                <Col md={3}>
+                <Col md={3} className="border-start">
                     <Miscellaneous />
                 </Col>
             </Row>
