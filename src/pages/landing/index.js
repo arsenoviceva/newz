@@ -13,6 +13,7 @@ import { NewsBlock } from './components/NewsBlock/NewsBlock';
 import { TopVideosBlock } from './components/NewsBlock/TopVideosBlock';
 import { Columnists } from './components/Columnists';
 import { NewsBlockEnd } from './components/NewsBlock/NewsBlockEnd';
+import { Footer } from './components/Footer';
 
 
 
@@ -62,14 +63,7 @@ export const LandingPage = () => {
             <SampleBanner imageUrl={'/images/largebanner1.jpg'} />
             <HorisontalLine />
             <NewsBlockEnd />
-
-
-
-
-
-
-
-
+            <Footer/>
         </>
     )
 }

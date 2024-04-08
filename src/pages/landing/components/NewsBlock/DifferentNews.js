@@ -7,6 +7,7 @@ import { LiaComment } from "react-icons/lia";
 import { LiaUserSolid } from "react-icons/lia";
 import { LuArrowUpRightSquare } from "react-icons/lu";
 import { SmallCardDet } from './SmallCardDet';
+import { SmallCard } from "../SmallCard";
 
 
 
@@ -86,12 +87,11 @@ export const DifferentNews = () => {
                 </Col>
                 <Col md={8}>
                     <p className="text-decoration-none fs-20px">RECENT POSTS </p>
-
-                    <SmallCardDet badgeTitle="NEWS" />
+                    <SmallCard details badgeTitle={'NEWS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'The transportaion market shows signs of revival'} />
                     <hr />
-                    <SmallCardDet badgeTitle="NEWS" />
+                    <SmallCard details badgeTitle={'NEWS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Norway exempts visas for visitors from EU'} />
                     <hr />
-                    <SmallCardDet badgeTitle="TECHNOLOGY" />
+                    <SmallCard details badgeTitle={'TECHNOLOGY'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Norway exempts visas for visitors from EU'} />
                     <hr />
 <                   div id="different-news">
                     <Card>
@@ -108,9 +108,9 @@ export const DifferentNews = () => {
                     </Card>
                     </div>
                     <hr />
-                    <SmallCardDet badgeTitle="MARKET" />
+                    <SmallCard details badgeTitle={'MARKET'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Norway exempts visas for visitors from EU'} />
                     <hr />
-                    <SmallCardDet badgeTitle="POLITICS" />
+                    <SmallCard details badgeTitle={'POLITICS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Norway exempts visas for visitors from EU'} />
                 </Col>
             </Row>
         </Container >

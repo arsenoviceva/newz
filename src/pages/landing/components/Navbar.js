@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { SlSocialYoutube } from "react-icons/sl";
+import { LiaTwitter } from "react-icons/lia";
+import { LiaFacebookF } from "react-icons/lia";
+import { LiaInstagram } from "react-icons/lia";
+import { LiaYoutube } from "react-icons/lia";
 import { Col, Row } from 'react-bootstrap';
 
 
@@ -57,10 +57,10 @@ export const NavbarCollapse = () => {
 
                                 </Nav>
                                 <Nav>
-                                    <Nav.Link href="#deets"><FaTwitter /></Nav.Link>
-                                    <Nav.Link href="#memes"><FaFacebookF /></Nav.Link>
-                                    <Nav.Link href="#memes"><FaInstagram /></Nav.Link>
-                                    <Nav.Link href="#memes"><SlSocialYoutube /></Nav.Link>
+                                    <Nav.Link href="#deets"><LiaTwitter /></Nav.Link>
+                                    <Nav.Link href="#memes"><LiaFacebookF /></Nav.Link>
+                                    <Nav.Link href="#memes"><LiaInstagram /></Nav.Link>
+                                    <Nav.Link href="#memes"><LiaYoutube  /></Nav.Link>
 
                                 </Nav>
                             </Navbar.Collapse>

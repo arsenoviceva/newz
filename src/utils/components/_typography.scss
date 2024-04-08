@@ -50,12 +50,7 @@ h1,h2,h3,h4,h5,h6{
       display:flex;
       align-items: center;
       font-weight: bold;
-     
-     
-
 }
-
-
 .social-column{
     border-right: 1px solid #C7C8C9; 
     padding: 0;
@@ -107,8 +102,29 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 100%;
 }
 
-#different-news{
-    position: relative;
-    
-    
+.footer-title{
+    color: white;
+    font-family: "Gloock", serif;
+    padding: 5px 0 20px 0;
 }
+.social-footer{
+    border: 0.5px solid $secondary;
+    border-radius: 80%;
+    color: white;
+    font-weight:bolder;
+    padding: 7px;
+    font-size:35px ;
+    margin-right: 1rem;
+
+}
+.social-footer-white{
+    border: 1px solid white;
+    border-radius: 80%;
+    color: $primary;
+    background-color: white;
+    padding: 5px;
+    font-size: xx-large;
+    margin-right: 1rem;
+}
+
+

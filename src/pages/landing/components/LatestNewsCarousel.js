@@ -9,7 +9,16 @@ import { LiaUserSolid } from "react-icons/lia";
 
 
 
+const carouselItems = [
+   {id: 1, title: 'Forbes #3: Top 10 Businessman NYC',  description: 'Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss',  image:  '/images/carousel1.jpg',},
+   {id: 2, title: 'Forbes #3: Top 10 Businessman MIAMI', description: 'Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss', image: '/images/news.jpg',},
+   {id: 3, title: 'Forbes #3: Top 10 Businessman LAS VEGAS', description: 'Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss', image: '/images/smallcard.jpg',}
+
+];
+
 export const LatestNewsCarousel = () => {
+
+const carouselLength = carouselItems.length;
 
     const [index, setIndex] = useState(0);
 
@@ -17,31 +26,37 @@ export const LatestNewsCarousel = () => {
         setIndex(selectedIndex);
     };
 
-    const onBackClick = () => {
-
+    const onBackClick = (nextId) => {
+        setIndex(
+        nextId === 0 ? carouselLength - 1 : nextId
+        )
     }
 
-    const onNextClick = () => {
+    const onNextClick = (nextId) => {
+        setIndex( 
+        nextId === carouselLength ? 0 : nextId
+        );
 
     }
-
-
-
+console.log(index,'index');
     return (
-
         <div id='latest-news-carousel'>
-            <div className="position title-without-corner">BUSINESS</div>
-                <SlArrowLeft className="left bg-white fs-2 text-muted border border-secondary p-1" />
-                <SlArrowRight className="right bg-white fs-2 text-muted border border-secondary p-1" />
+
+            <div className="position-title title-without-corner">BUSINESS</div>
+                <SlArrowLeft 
+                    onClick={() => onBackClick(index-1)} className={`left bg-white fs-2 text-muted border border-secondary p-1`} />
+                <SlArrowRight 
+                    onClick={() => onNextClick(index+1)} className="right bg-white fs-2 text-muted border border-secondary p-1" />
+
             <Carousel indicators={false} controls={false} activeIndex={index}>
-                <Carousel.Item>
+                {/* <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src='/images/carousel.jpg'
+                        src={images[index]}
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Forbes #3: Top 10 Businessman NYC</h3>
+                        <h2>Forbes #3: Top 10 Businessman NYC</h2>
                         <p>Its first decline in subscribes since 2011 triggered a $54 bilion stock value loss and [...]</p>
                         <LiaCalendarAlt className="fs-20px" /> Dec 14, 2022
                         <LiaUserSolid className="fs-20px ms-4" /> By <strong>Admin</strong>
@@ -52,25 +67,30 @@ export const LatestNewsCarousel = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src='/images/carousel.jpg'
+                        src={images[index]}
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Forbes #3: Top 10 Businessman NYC</h3>
+                        <h3>Forbes #3: Top 10 Businessman Miami</h3>
                         <p>Its first decline in subscribes since 2011 triggered a $54 bilion stock value loss and [...]</p>
                     </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src='/images/carousel.jpg'
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Forbes #3: Top 10 Businessman NYC</h3>
-                        <p>Its first decline in subscribes since 2011 triggered a $54 bilion stock value loss and [...]</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                </Carousel.Item> */}
+                {carouselItems?.map(item=>{
+                    return(
+                        <Carousel.Item key={item.id}>
+                        <img
+                            className="d-block w-100 h-100"
+                            src={item.image}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>{item.title}</h3>
+                            <p>{item.description}</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    )
+                })}
+               
             </Carousel>
         </div>
 

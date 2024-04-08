@@ -5,6 +5,7 @@
 @import './components/typography';
 @import './components/container';
 @import './components/icons';
+@import './components//form';
 
 
 body{
@@ -17,5 +18,6 @@ body{
 .row{
     @extend .w-100, .m-0;
 }
+
 
 @import "bootstrap-icons/font/bootstrap-icons.css";

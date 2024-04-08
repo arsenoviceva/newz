@@ -11,17 +11,17 @@ export const LatestNews = () => {
                     <a href="" className="text-decoration-none fs-20px">LATEST NEWS <SlArrowRight className="fs-20px" /> </a>
                 </Col>
                 <Row className="my-4">
-                    <Col md={6} className="ps-md-0">
+                    <Col md={7} className="ps-md-0">
                         <LatestNewsCarousel />
                     </Col>
-                    <Col md={6}>
+                    <Col md={5}>
                         <SmallCard badgeTitle={'NEWS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Norway exempts visas for visitors from EU'} />
                         <hr />
                         <SmallCard badgeTitle={'MARKET'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'DOW lika a bull'} />
                         <hr />
                         <SmallCard badgeTitle={'POLITICS'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'Sadabell ATM become popular in Ohio'} />
                         <hr />
-                        <SmallCard badgeTitle={'MARKET'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'US accuses Russia of currency manipulation'} />
+                        <SmallCard badgeTitle={'MARKET'} coloredTitle={'title-without-corner rounded-0'} cardTitleColor="fs-5 text-black" backgroundColor="bg-white" cardTitle={'US accuses Russia of currency manipulation. What did Putin said?'} />
                         <hr />
                         <a href="" className="text-decoration-none fs-20px">See all posts <SlArrowRight className="fs-10px" /> </a>
                     </Col>

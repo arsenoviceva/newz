@@ -6,7 +6,19 @@
 }
 #latest-news-carousel  {
   position: relative;
-  .position{
+  height:100%;
+
+  .carousel.slide{
+    height: 100%;
+    .carousel-inner{
+      height: 100%;
+      .carousel-item{
+        height: 100%;
+      }
+  }
+}
+
+  .position-title{
     position: absolute;
     z-index: 1;
     top:10%;
@@ -24,6 +36,45 @@
     z-index: 1;
     top:10%;
     right: 5%;
+  }
+  .carousel-caption {
+    position: absolute;
+    text-align: left;
+    left: 5%;
+    font-family: "Gloock", serif;
+
+  }
+
+
+}
+#top-videos-carousel  {
+  position: relative;
+
+  .position-title{
+    position: absolute;
+    z-index: 1;
+    top:10%;
+    left: 5%;
+  }
+  .left{
+    position: absolute;
+    z-index: 1;
+    top:10%;
+    right: 10%;
+
+  }
+  .right{
+    position: absolute;
+    z-index: 1;
+    top:10%;
+    right: 5%;
+  }
+  .carousel-caption {
+    position: absolute;
+    text-align: left;
+    left: 5%;
+    font-family: "Gloock", serif;
+
   }
 
 
