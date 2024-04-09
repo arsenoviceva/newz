@@ -1,19 +1,18 @@
 /* The following block can be included in a custom.scss */
 
 /* make the customizations */
-$secondary: #E5E9EC;
-$primary: #3D5C6E;
+$secondary: #e5e9ec;
+$primary: #3d5c6e;
 $smalltitle: #777777;
-$info: #EEF2F5;
+$info: #eef2f5;
+$input-color: black;
 
 $theme-colors: (
-  'primary': $primary,
-  'secondary': $secondary,
-  'danger': #E93512,
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": #e93512,
   "info": $info,
-  
 );
 
-
 /* import bootstrap to set changes */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";

@@ -1,0 +1,13 @@
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .border-md-end {
+    border-right: var(--bs-border-width) var(--bs-border-style)
+      var(--bs-border-color) !important;
+    // @extend .border-end;
+  }
+  .border-md-start {
+    border-left: var(--bs-border-width) var(--bs-border-style)
+      var(--bs-border-color) !important;
+    // @extend .border-end;
+  }
+}

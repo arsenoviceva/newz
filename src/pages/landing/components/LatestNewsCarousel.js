@@ -1,55 +1,72 @@
-import { useState } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
+import { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
-import { LiaCalendarAlt } from "react-icons/lia";
-import { LiaComment } from "react-icons/lia";
-import { LiaUserSolid } from "react-icons/lia";
-
-
 
 const carouselItems = [
-   {id: 1, title: 'Forbes #3: Top 10 Businessman NYC',  description: 'Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss',  image:  '/images/carousel1.jpg',},
-   {id: 2, title: 'Forbes #3: Top 10 Businessman MIAMI', description: 'Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss', image: '/images/news.jpg',},
-   {id: 3, title: 'Forbes #3: Top 10 Businessman LAS VEGAS', description: 'Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss', image: '/images/smallcard.jpg',}
-
+  {
+    id: 1,
+    title: "Forbes #3: Top 10 Businessman NYC",
+    description:
+      "Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss",
+    image: "/images/carousel1.jpg",
+  },
+  {
+    id: 2,
+    title: "Forbes #3: Top 10 Businessman MIAMI",
+    description:
+      "Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss",
+    image: "/images/news.jpg",
+  },
+  {
+    id: 3,
+    title: "Forbes #3: Top 10 Businessman LAS VEGAS",
+    description:
+      "Its first decline in subscribers since 2011 triggered a $54 bilion stock value loss",
+    image: "/images/smallcard.jpg",
+  },
 ];
 
 export const LatestNewsCarousel = () => {
+  const carouselLength = carouselItems.length;
 
-const carouselLength = carouselItems.length;
+  const [index, setIndex] = useState(0);
 
-    const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
 
-    const handleSelect = (selectedIndex) => {
-        setIndex(selectedIndex);
-    };
-
-    const onBackClick = (nextId) => {
-        setIndex(
-        nextId === 0 ? carouselLength - 1 : nextId
-        )
+  const onBackClick = () => {
+    if (index === 0) {
+      setIndex(carouselLength - 1);
+      return;
     }
+    setIndex(index - 1);
+  };
 
-    const onNextClick = (nextId) => {
-        setIndex( 
-        nextId === carouselLength ? 0 : nextId
-        );
-
+  const onNextClick = () => {
+    if (index === carouselLength - 1) {
+      setIndex(0);
+      return;
     }
-console.log(index,'index');
-    return (
-        <div id='latest-news-carousel'>
+    setIndex(index + 1);
+  };
 
-            <div className="position-title title-without-corner">BUSINESS</div>
-                <SlArrowLeft 
-                    onClick={() => onBackClick(index-1)} className={`left bg-white fs-2 text-muted border border-secondary p-1`} />
-                <SlArrowRight 
-                    onClick={() => onNextClick(index+1)} className="right bg-white fs-2 text-muted border border-secondary p-1" />
+  console.log(index, "index");
+  return (
+    <div id="latest-news-carousel">
+      <div className="position-title title-without-corner">BUSINESS</div>
+      <SlArrowLeft
+        onClick={onBackClick}
+        className={`left bg-white fs-2 text-muted border border-secondary p-1`}
+      />
+      <SlArrowRight
+        onClick={onNextClick}
+        className="right bg-white fs-2 text-muted border border-secondary p-1"
+      />
 
-            <Carousel indicators={false} controls={false} activeIndex={index}>
-                {/* <Carousel.Item>
+      <Carousel indicators={false} controls={false} activeIndex={index}>
+        {/* <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={images[index]}
@@ -75,24 +92,22 @@ console.log(index,'index');
                         <p>Its first decline in subscribes since 2011 triggered a $54 bilion stock value loss and [...]</p>
                     </Carousel.Caption>
                 </Carousel.Item> */}
-                {carouselItems?.map(item=>{
-                    return(
-                        <Carousel.Item key={item.id}>
-                        <img
-                            className="d-block w-100 h-100"
-                            src={item.image}
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>{item.title}</h3>
-                            <p>{item.description}</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    )
-                })}
-               
-            </Carousel>
-        </div>
-
-    )
-}
+        {carouselItems?.map((item) => {
+          return (
+            <Carousel.Item key={item.id}>
+              <img
+                className="d-block w-100 h-100"
+                src={item.image}
+                alt="Third slide"
+              />
+              <Carousel.Caption>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
+    </div>
+  );
+};

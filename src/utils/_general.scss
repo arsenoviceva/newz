@@ -1,23 +1,21 @@
-@import './components/variables';
-@import './components/button';
-@import './components/card';
-@import './components/carousel';
-@import './components/typography';
-@import './components/container';
-@import './components/icons';
-@import './components//form';
+@import "./components/variables";
+@import "./components/button";
+@import "./components/card";
+@import "./components/carousel";
+@import "./components/typography";
+@import "./components/container";
+@import "./components/icons";
+@import "./components/form";
+@import "./components/borders";
 
-
-body{
-    font-family: "Nunito Sans", sans-serif;
-    background-color: #fff;
-    //  background-color: $secondary;
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #fff;
+  //  background-color: $secondary;
 }
 
-
-.row{
-    @extend .w-100, .m-0;
+.row {
+  @extend .w-100, .m-0;
 }
-
 
 @import "bootstrap-icons/font/bootstrap-icons.css";
