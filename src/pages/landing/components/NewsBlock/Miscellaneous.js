@@ -12,7 +12,7 @@ export const Miscellaneous = () => {
           <p className="text-decoration-none fs-15px">STAY CONNECTED </p>
         </Col>
 
-        <Col md={12} className="px-md-3">
+        <Col md={12} className="px-md-3 p-0">
           <SocialIcons />
           <hr className="my-4" />
           <p className="text-decoration-none fs-15px">HOT TAGS TODAY </p>

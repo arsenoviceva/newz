@@ -101,18 +101,18 @@ export const Footer = () => {
             </span>
           </Col>
           <Row>
-            <Col md={2} className="p-0 my-4">
+            <Col md={2} className="p-0 my-3">
               <img
                 src="images/logoinv.png"
                 className="img-fluid m-o p-0 w-75"
                 alt="logo"
               />
             </Col>
-            <Col md={4} className="p-0 my-4">
-              <span className="text-secondary fs-10px">
+            <Col md={4} className="p-0 mb-3 my-md-4">
+              <span className="text-secondary fs-15px">
                 2022 Copyrights by{" "}
               </span>{" "}
-              <span className="text-white fs-10px">
+              <span className="text-white fs-15px">
                 {" "}
                 <strong>Newz</strong> All rights reserved.
               </span>
