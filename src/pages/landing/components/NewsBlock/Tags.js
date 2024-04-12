@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 export const Tags = () => {
   return (
     <Container className="border px-3 py-4">
-      <Row className="">
+      <Row>
         <Col md={12} className="d-flex flex-wrap align-items-center gap-2">
           <span className="tags">Covid-19</span>
           <span className="tags bg-primary text-white">Bitcoin</span>

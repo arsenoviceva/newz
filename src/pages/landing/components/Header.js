@@ -10,7 +10,7 @@ import { LiaSearchSolid } from "react-icons/lia";
 export const Header = () => {
   return (
     <Container className="bg-white py-3">
-      <Row className="d-flex align-items-center ">
+      <Row className="align-items-center ">
         <div className="col-md-8">
           <div className="row d-flex  align-items-center">
             <div className="col-md-4 p-0 ">

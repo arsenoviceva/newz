@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 export const GoogleStories = ({ borderColor, title }) => {
   return (
     <Container>
-      <Row className="d-flex align-items-center">
+      <Row className="align-items-center">
         <Col xs={4}>
           <img
             className={borderColor}
