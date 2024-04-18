@@ -101,7 +101,14 @@ export const TopVideosBlock = () => {
                         alt="Third slide"
                       />
                       <Carousel.Caption>
-                        <h3>{item.title}</h3>
+                        <a
+                          href="https://www.google.co.uk/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-decoration-none text-reset"
+                        >
+                          <h3>{item.title}</h3>
+                        </a>
                         <p>{item.description}</p>
                         <LiaCalendarAlt className="fs-20px" /> Dec 14, 2022
                         <LiaUserSolid className="fs-20px ms-4" /> By Admin

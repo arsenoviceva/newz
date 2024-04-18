@@ -17,7 +17,16 @@ export const SmallCard = ({
         <Card className={backgroundColor}>
           <Card.Header className={coloredTitle}>{badgeTitle}</Card.Header>
           <Card.Body className="d-flex justify-content-between align-items-center">
-            <Card.Title className={cardTitleColor}>{cardTitle}</Card.Title>
+            <Card.Title className={cardTitleColor}>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                {cardTitle}
+              </a>
+            </Card.Title>
           </Card.Body>
           {details && (
             <div className="my-4 me-5 d-flex  align-items-center gap-2">

@@ -17,7 +17,14 @@ export const DifferentNews = () => {
             </Card.Header>
             <Card.Body className="px-0">
               <Card.Title className="fs-4">
-                The 6th session of the US Congress today
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  The 6th session of the US Congress today
+                </a>
               </Card.Title>
               <Card.Text className="pt-3">
                 <div className="my-4 me-5 d-flex  align-items-center gap-2">
@@ -39,7 +46,14 @@ export const DifferentNews = () => {
             </Card.Header>
             <Card.Body className="px-0">
               <Card.Title className="fs-4">
-                The 6th session of the US Congress today
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  The 6th session of the US Congress today
+                </a>
               </Card.Title>
               <Card.Text className="pt-3">
                 <div className="my-4 me-5 d-flex  align-items-center gap-2">
@@ -61,7 +75,14 @@ export const DifferentNews = () => {
             </Card.Header>
             <Card.Body className="px-0">
               <Card.Title className="fs-4">
-                The 6th session of the US Congress today
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  The 6th session of the US Congress today
+                </a>
               </Card.Title>
               <Card.Text className="pt-3">
                 <div className="my-4 me-5 d-flex  align-items-center gap-2">
@@ -78,7 +99,14 @@ export const DifferentNews = () => {
             </Card.Header>
             <Card.Body className="px-0">
               <Card.Title className="fs-4">
-                Sixsense Resort 5 stars just $1,299
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  Sixsense Resort 5 stars just $1,299
+                </a>
               </Card.Title>
               <Card.Text className="pt-3">
                 <div className="my-4 me-5 d-flex  align-items-center gap-2">
@@ -132,8 +160,15 @@ export const DifferentNews = () => {
                 <Card.Header className="title-without-corner rounded-0">
                   BUSINESS
                 </Card.Header>
-                <Card.Title className="text-white fs-2">
-                  2022 NFL Craf predict: Sample Quarterbacks
+                <Card.Title className="fs-4 text-white">
+                  <a
+                    href="https://www.google.co.uk/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-decoration-none text-reset"
+                  >
+                    2022 NFL Craf predict: Sample Quarterbacks
+                  </a>
                 </Card.Title>
                 <div className="position my-4 me-5 d-flex  align-items-center gap-2 text-white">
                   <LiaCalendarAlt className="fs-5" /> Dec 14, 2022

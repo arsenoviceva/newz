@@ -47,13 +47,23 @@ export const LandingPage = () => {
       <Container>
         <Row>
           <Col md={4} className="border-md-end">
-            <MediumCard isLive badgeTitle={"POLITICS"} />
+            <MediumCard
+              isLive
+              badgeTitle={"POLITICS"}
+              title={"The 6th session of the US Congress today"}
+            />
           </Col>
           <Col md={4} className="border-md-end">
-            <MediumCard badgeTitle={"MARKET"} />
+            <MediumCard
+              badgeTitle={"MARKET"}
+              title={"The 6th session of the US Congress today"}
+            />
           </Col>
           <Col md={4}>
-            <MediumCard badgeTitle={"ECONOMIC"} />
+            <MediumCard
+              badgeTitle={"ECONOMIC"}
+              title={"The 6th session of the US Congress today"}
+            />
           </Col>
         </Row>
       </Container>

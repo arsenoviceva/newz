@@ -14,7 +14,16 @@ export const NumberedCard = ({ badgeTitle, number }) => {
               {badgeTitle}
             </Card.Header>
             <Card.Body className="d-flex justify-content-between align-items-center">
-              <Card.Title className="fs-5">US Stock Market today</Card.Title>
+              <Card.Title className="fs-5">
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  US Stock Market today
+                </a>
+              </Card.Title>
             </Card.Body>
           </Card>
         </Col>

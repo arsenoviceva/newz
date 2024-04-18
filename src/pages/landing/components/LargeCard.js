@@ -11,7 +11,16 @@ export const LargeCard = ({ isUser, badgeTitle, cardTitle }) => {
         {badgeTitle}
       </Card.Header>
       <Card.Body className="px-0">
-        <Card.Title className="fs-2">{cardTitle}</Card.Title>
+        <Card.Title className="fs-2">
+          <a
+            href="https://www.google.co.uk/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-decoration-none text-reset"
+          >
+            {cardTitle}
+          </a>
+        </Card.Title>
         <Card.Text className="pt-3">
           The social media company is in discussions to sell itself to Elon, a
           dramatic turn of events just 11 days after the Blake Lemoine

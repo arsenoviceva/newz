@@ -49,9 +49,13 @@ export const Header = () => {
         <div className="col-md-4 my-2">
           <div className="row d-flex align-items-center">
             <div className="col-5">
-              <div className="d-flex align-items-center justify-content-between">
+              <div className="d-flex align-items-center gap-3">
                 <LiaEnvelopeSolid className="fs-3" />
-                <h6 className="my-1 fw-bold"> SUBSCRIBE</h6>
+                <input
+                  type="text"
+                  className="form-input border-0 w-100"
+                  placeholder="SUBSCRIBE"
+                />
               </div>
               <hr className="opacity-100 m-0" />
             </div>

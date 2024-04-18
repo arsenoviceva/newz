@@ -101,7 +101,14 @@ export const LatestNewsCarousel = () => {
                 alt="Third slide"
               />
               <Carousel.Caption>
-                <h3>{item.title}</h3>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-reset"
+                >
+                  <h3>{item.title}</h3>
+                </a>
                 <p>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>

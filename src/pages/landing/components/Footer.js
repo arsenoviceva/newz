@@ -45,33 +45,152 @@ export const Footer = () => {
               </Col>
             </Row>
             <Col md={12} className="ps-0 py-5">
-              <LiaTwitter className="social-footer-white" />
-              <LiaFacebookF className="social-footer" />
-              <LiaInstagram className="social-footer" />
-              <LiaYoutube className="social-footer" />
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <LiaTwitter className="social-footer-white" />
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <LiaFacebookF className="social-footer" />
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <LiaInstagram className="social-footer" />
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <LiaYoutube className="social-footer" />
+              </a>
             </Col>
           </Col>
           <Col md={2} xs={6} className="p-0">
             <h5 className="footer-title"> Topics</h5>
             <ul className="list-unstyled text-white">
-              <li className="text-decoration-underline pb-2"> News</li>
-              <li className="pb-2"> Business</li>
-              <li className="pb-2"> Tech</li>
-              <li className="pb-2"> Politics</li>
-              <li className="pb-2"> Economy</li>
-              <li className="pb-2"> Market</li>
-              <li className="pb-2"> Video</li>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> News</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Business</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Tech</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Politics</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Economy</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Market</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Video</li>
+              </a>
             </ul>
           </Col>
           <Col md={2} xs={6} className="p-0">
             <h5 className="footer-title"> Help</h5>
             <ul className="list-unstyled text-white">
-              <li className="pb-2"> About</li>
-              <li className="pb-2"> Contact</li>
-              <li className="pb-2"> Advertise</li>
-              <li className="pb-2"> Career</li>
-              <li className="pb-2"> Policy</li>
-              <li className="pb-2"> FAQ</li>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> About</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Contact</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Advertise</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Career</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> Policy</li>
+              </a>
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                <li className="pb-2"> FAQ</li>
+              </a>
             </ul>
           </Col>
           <Col md={3} className="p-0">
@@ -97,7 +216,14 @@ export const Footer = () => {
             </span>{" "}
             <span className="text-decoration-underline fw-bold text-white">
               {" "}
-              Policy
+              <a
+                href="https://www.google.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-reset"
+              >
+                Policy
+              </a>
             </span>
           </Col>
           <Row>
