@@ -15,7 +15,7 @@ export const Footer = () => {
     <div className="bg-primary">
       <Container className="mt-5 ">
         <Row className="pt-5">
-          <Col md={5} className="p-0">
+          <Col md={4} className="p-0">
             <h5 className="footer-title"> Newz - Business Magazine </h5>
             <Row>
               <Col xs={1} className="p-0">
@@ -79,7 +79,7 @@ export const Footer = () => {
               </a>
             </Col>
           </Col>
-          <Col md={2} xs={6} className="p-0">
+          <Col md={4} lg={2} xs={6} className="p-0">
             <h5 className="footer-title"> Topics</h5>
             <ul className="list-unstyled text-white">
               <a
@@ -140,7 +140,7 @@ export const Footer = () => {
               </a>
             </ul>
           </Col>
-          <Col md={2} xs={6} className="p-0">
+          <Col md={4} lg={2} xs={6} className="p-0">
             <h5 className="footer-title"> Help</h5>
             <ul className="list-unstyled text-white">
               <a
@@ -193,14 +193,14 @@ export const Footer = () => {
               </a>
             </ul>
           </Col>
-          <Col md={3} className="p-0">
+          <Col lg={4} xs={12} className="p-0">
             <h5 className="footer-title "> Newsletter</h5>
             <p className="text-white">
               {" "}
               Register now to get latest updates on promotions and coupons.{" "}
             </p>
             <div className="send-email-form">
-              <LiaEnvelopeSolid className="text-white fs-3" />
+              <LiaEnvelopeSolid className="text-white fs-3 d-none d-md-block" />
               <input
                 type="text"
                 className="form-input"

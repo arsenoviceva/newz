@@ -10,7 +10,7 @@ export const SocialIcons = () => {
   return (
     <Container className="border pt-3 my-3">
       <Row className="align-items-center justify-content-center">
-        <Col xs={2} className="d-flex justify-content-center social-column">
+        <Col xs={2} className=" d-flex justify-content-center social-column">
           <a
             href="https://www.google.co.uk/"
             target="_blank"

@@ -128,3 +128,30 @@ h6 {
   font-size: xx-large;
   margin-right: 1rem;
 }
+
+@media (max-width: 991px) {
+  #hidden {
+    display: none;
+  }
+}
+rotation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rotating-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.rotating-text .rotation-content {
+  display: inline-block;
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

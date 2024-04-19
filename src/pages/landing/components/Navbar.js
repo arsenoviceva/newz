@@ -12,7 +12,7 @@ import { Col, Row } from "react-bootstrap";
 export const NavbarCollapse = () => {
   return (
     <>
-      <Container className="fs-5 p-0 bg-white mx-auto">
+      <Container className="fs-5 p-0 bg-white mx-auto d-none d-lg-block">
         <Row>
           <Col md={12}>
             <Navbar

@@ -8,7 +8,7 @@ export const DifferentNews = () => {
   return (
     <Container>
       <Row>
-        <Col md={4} className="border-md-end p-0 pe-md-2">
+        <Col lg={4} className="border-md-end p-0 pe-md-2">
           <p className="text-decoration-none fs-15px">POPULAR POSTS </p>
 
           <Card className="mt-3 border-0 bg-white">
@@ -124,7 +124,7 @@ export const DifferentNews = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={8} className=" my-4 my-md-0 p-0 ps-md-2">
+        <Col lg={8} className=" my-4 my-md-0 p-0 ps-md-2">
           <p className="text-decoration-none fs-15px">RECENT POSTS </p>
           <SmallCard
             details

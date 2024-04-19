@@ -6,10 +6,10 @@ export const NewsBlock = () => {
   return (
     <Container>
       <Row>
-        <Col md={9} className="p-0">
+        <Col lg={9} className="p-0">
           <DifferentNews />
         </Col>
-        <Col md={3} className="border-md-start p-0">
+        <Col lg={3} className="border-md-start p-0">
           <Miscellaneous />
         </Col>
       </Row>

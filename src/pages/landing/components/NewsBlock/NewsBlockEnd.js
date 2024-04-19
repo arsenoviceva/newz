@@ -7,7 +7,7 @@ export const NewsBlockEnd = () => {
   return (
     <Container>
       <Row>
-        <Col md={4} className="border-md-end">
+        <Col xl={4} className="border-md-end">
           <a href="/" className="text-decoration-none fs-15px">
             BUSINESS <SlArrowRight className="fs-15px" />{" "}
           </a>
@@ -42,7 +42,7 @@ export const NewsBlockEnd = () => {
           />
         </Col>
 
-        <Col md={4} className="border-md-end">
+        <Col xl={4} className="border-md-end">
           <a href="/" className="text-decoration-none fs-15px pt-3">
             POLITICS <SlArrowRight className="fs-15px" />{" "}
           </a>
@@ -76,7 +76,7 @@ export const NewsBlockEnd = () => {
           />
         </Col>
 
-        <Col md={4}>
+        <Col xl={4}>
           <a href="/" className="text-decoration-none fs-15px pt-3">
             MARKET <SlArrowRight className="fs-15px" />{" "}
           </a>

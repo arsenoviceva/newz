@@ -15,7 +15,7 @@ export const Columnists = () => {
           <SlArrowLeft className="bg-white fs-5 text-muted border border-secondary p-1" />
           <SlArrowRight className="bg-white fs-5 text-muted border border-secondary p-1" />
         </Col>
-        <Col md={3}>
+        <Col md={6} lg={3}>
           <Columnist
             name={"Conor Bradley"}
             columnistBadge={"BUSINESS, NEWS"}
@@ -24,14 +24,14 @@ export const Columnists = () => {
             }
           />
         </Col>
-        <Col md={3}>
+        <Col md={6} lg={3}>
           <Columnist
             name={"Luis Diaz"}
             columnistBadge={"POLITICS, MARKET"}
             text={"My content focus into businessm politic that allows anyone."}
           />
         </Col>
-        <Col md={3}>
+        <Col md={6} lg={3}>
           <Columnist
             name={"Albertno Moreno"}
             columnistBadge={"VIDEOS, TECHNOLOGY"}
@@ -40,7 +40,7 @@ export const Columnists = () => {
             }
           />
         </Col>
-        <Col md={3}>
+        <Col md={6} lg={3}>
           <Columnist
             name={"Darwin Nunez"}
             columnistBadge={"ECONOMICS"}

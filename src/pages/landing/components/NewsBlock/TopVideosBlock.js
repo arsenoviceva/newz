@@ -72,7 +72,7 @@ export const TopVideosBlock = () => {
               TOP VIDEOS LAST WEEK{" "}
             </p>
           </Col>
-          <Col md={7} className=" p-0">
+          <Col lg={7} className=" p-0">
             <div id="top-videos-carousel">
               <div className="position-title title-without-corner">
                 BUSINESS
@@ -120,7 +120,7 @@ export const TopVideosBlock = () => {
               </Carousel>
             </div>
           </Col>
-          <Col md={4} className="border-md-start p-0 ps-md-4">
+          <Col lg={4} className="border-md-start p-0 ps-md-4">
             <p className="text-decoration-none fs-20px text-white">
               VIDEOS UP NEXT{" "}
             </p>

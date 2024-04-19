@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { LiaCalendarAlt } from "react-icons/lia";
@@ -7,13 +8,82 @@ import { LiaUserSolid } from "react-icons/lia";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { LiaSearchSolid } from "react-icons/lia";
 
+import { Badge } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { LiaTwitter } from "react-icons/lia";
+import { LiaFacebookF } from "react-icons/lia";
+import { LiaInstagram } from "react-icons/lia";
+import { LiaYoutube } from "react-icons/lia";
+
 export const Header = () => {
+  const [openInput, setOpenInput] = useState(false);
+
+  const clickHandler = () => {
+    setOpenInput(!openInput);
+  };
+
   return (
     <Container className="bg-white py-3">
-      <Row className="align-items-center ">
-        <div className="col-md-8">
+      <Row className="align-items-lg-center ">
+        <div className="col-auto d-lg-none">
+          <Navbar
+            collapseOnSelect
+            expand="lg"
+            className="bg-white"
+            id="navbar-typography"
+          >
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto fw-bold gap-2">
+                <NavDropdown title="Demo" id="collapsible-nav-dropdown" active>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Features" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Shop" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="#features" className="position-relative">
+                  News
+                  <Badge className="top-right-badge fs-10px">HOT</Badge>
+                </Nav.Link>
+                <Nav.Link href="#pricing">Tech</Nav.Link>
+                <Nav.Link href="#features">Business</Nav.Link>
+                <Nav.Link href="#pricing">Politics</Nav.Link>
+                <Nav.Link href="#features">Market</Nav.Link>
+              </Nav>
+              <Nav>
+                <Nav.Link href="#deets">
+                  <LiaTwitter />
+                </Nav.Link>
+                <Nav.Link href="#memes">
+                  <LiaFacebookF />
+                </Nav.Link>
+                <Nav.Link href="#memes">
+                  <LiaInstagram />
+                </Nav.Link>
+                <Nav.Link href="#memes">
+                  <LiaYoutube />
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
+        <div className="col-lg-8 col p-0">
           <div className="row d-flex  align-items-center">
-            <div className="col-md-4 p-0 ">
+            <div className="col-lg-4 p-0 col-12 col-md-auto">
               <img
                 className="img-fluid m-o p-0"
                 src="/images/news-logo-2.png"
@@ -21,7 +91,7 @@ export const Header = () => {
               />
             </div>
 
-            <div className="col-6 col-md-4 d-flex">
+            <div className="col-6 col-md-auto col-lg-4 d-flex">
               <LiaCalendarAlt className="fs-2" />
               <ul className="list-unstyled m-0">
                 <li>
@@ -31,7 +101,7 @@ export const Header = () => {
               </ul>
             </div>
 
-            <div className="col-6 col-md-4 d-flex">
+            <div className="col-6 col-md-auto col-lg-4 d-flex">
               <LiaCloudSunSolid className="fs-2" />
               <ul className="list-unstyled m-0">
                 <li>
@@ -46,14 +116,15 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className="col-md-4 my-2">
+        <div className="col-lg-4 my-2 p-0 text-center d-none d-md-flex">
           <div className="row d-flex align-items-center">
-            <div className="col-5">
-              <div className="d-flex align-items-center gap-3">
+            <div className="col-4 p-0">
+              <div className="d-flex align-items-center">
                 <LiaEnvelopeSolid className="fs-3" />
                 <input
                   type="text"
-                  className="form-input border-0 w-100"
+                  id="org"
+                  className="form-input border-0 w-100 fs-15px"
                   placeholder="SUBSCRIBE"
                 />
               </div>
@@ -70,10 +141,19 @@ export const Header = () => {
               </div>
             </div>
 
-            <div className="col-3">
-              <LiaSearchSolid className="fs-2 ms-3" />
+            <div className="col-4">
+              <LiaSearchSolid className="fs-2 ms-3" onClick={clickHandler} />
             </div>
           </div>
+          {openInput === true ? (
+            <div className="row my-2">
+              <input
+                type="text"
+                className="form-input border w-100"
+                placeholder="search"
+              />
+            </div>
+          ) : null}
         </div>
       </Row>
     </Container>

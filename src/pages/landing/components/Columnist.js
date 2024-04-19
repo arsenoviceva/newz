@@ -5,7 +5,7 @@ export const Columnist = ({ name, columnistBadge, text }) => {
         <div className="d-flex align-items-center">
           <img
             src="/images/columnist.jpg"
-            className="columnist-img"
+            className="columnist-img "
             alt="columnist-pic"
           />
           <div className="d-md-none">

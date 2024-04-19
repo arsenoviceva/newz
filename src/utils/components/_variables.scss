@@ -6,12 +6,16 @@ $primary: #3d5c6e;
 $smalltitle: #777777;
 $info: #eef2f5;
 $input-color: black;
+$success: #00ff06;
+$primary-dark: #2e4553;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "danger": #e93512,
   "info": $info,
+  "success": $success,
+  "primary-dark": $primary-dark,
 );
 
 /* import bootstrap to set changes */
