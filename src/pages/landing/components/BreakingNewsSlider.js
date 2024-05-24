@@ -56,11 +56,11 @@ export const BreakingNewsSlider = () => {
             </div>
             <div className="col-lg-1 d-flex align-items-center justify-content-end gap-1">
               <SlArrowLeft
-                className="bg-white fs-3 text-muted"
+                className="bg-white fs-3 text-muted cursor-pointer"
                 onClick={onBackClick}
               />
               <SlArrowRight
-                className="bg-white fs-3 text-muted"
+                className="bg-white fs-3 text-muted cursor-pointer"
                 onClick={onNextClick}
               />
             </div>

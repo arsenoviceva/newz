@@ -94,9 +94,7 @@ h6 {
   border: 1px solid #c7c8c9;
   border-radius: 100%;
 }
-//.left-border {
-//border-left: 1px solid #637e8f;
-//}
+
 .line-color {
   color: #637e8f;
 }
@@ -154,4 +152,12 @@ rotation-wrapper {
   100% {
     transform: translateX(-100%);
   }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.language-flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }

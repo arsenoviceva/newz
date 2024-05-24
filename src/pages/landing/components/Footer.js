@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   LiaHomeSolid,
@@ -9,8 +10,18 @@ import {
   LiaYoutube,
 } from "react-icons/lia";
 import { LuSendHorizonal } from "react-icons/lu";
+import { SlArrowUp } from "react-icons/sl";
 
 export const Footer = () => {
+  const [language, setLanguage] = useState("English");
+  const changeLanguage = () => {
+    if (language === "English") {
+      setLanguage("German");
+    }
+    if (language === "German") {
+      setLanguage("English");
+    }
+  };
   return (
     <div className="bg-primary">
       <Container className="mt-5 ">
@@ -207,7 +218,7 @@ export const Footer = () => {
                 placeholder="Enter your email"
               />
               <div className="rounded-icon">
-                <LuSendHorizonal className="text-primary" />
+                <LuSendHorizonal className="text-primary cursor-pointer" />
               </div>
             </div>
             <span className="text-secondary fst-italic ">
@@ -226,7 +237,7 @@ export const Footer = () => {
               </a>
             </span>
           </Col>
-          <Row>
+          <Row className="align-items-center">
             <Col md={2} className="p-0 my-3">
               <img
                 src="images/logoinv.png"
@@ -242,6 +253,43 @@ export const Footer = () => {
                 {" "}
                 <strong>Newz</strong> All rights reserved.
               </span>
+            </Col>
+            <Col md={6}>
+              <div className="d-flex align-items-center justify-content-end gap-2">
+                <img
+                  src={`/images/${
+                    language === "English"
+                      ? "englishFlag.png"
+                      : "germanFlag.png"
+                  }`}
+                  className="language-flag"
+                />
+                <div class="dropdown">
+                  <button
+                    className="bg-primary text-white border-0 dropddown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {language}
+                    <SlArrowUp className="ms-2 text-white fs-5 cursor-pointer" />
+                  </button>
+                  <ul className="dropdown-menu bg-primary text-white border-1">
+                    <li onClick={changeLanguage}>
+                      <a
+                        className="dropdown-item bg-primary text-white"
+                        href="#"
+                      >
+                        {language === "English" ? (
+                          <p className="m-0"> German</p>
+                        ) : (
+                          <p className="m-0"> English</p>
+                        )}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </Col>
           </Row>
         </Row>

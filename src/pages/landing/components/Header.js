@@ -16,12 +16,29 @@ import { LiaTwitter } from "react-icons/lia";
 import { LiaFacebookF } from "react-icons/lia";
 import { LiaInstagram } from "react-icons/lia";
 import { LiaYoutube } from "react-icons/lia";
+import { SubscribeModal } from "./SubscribeModal";
+
+import {
+  Dropdown,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap";
 
 export const Header = () => {
   const [openInput, setOpenInput] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   const clickHandler = () => {
     setOpenInput(!openInput);
+  };
+
+  const openModalHandler = () => {
+    setOpenModal(true);
+  };
+  const closeModalHandler = () => {
+    setOpenModal(false);
   };
 
   return (
@@ -90,7 +107,6 @@ export const Header = () => {
                 alt="logo"
               />
             </div>
-
             <div className="col-6 col-md-auto col-lg-4 d-flex">
               <LiaCalendarAlt className="fs-2" />
               <ul className="list-unstyled m-0">
@@ -119,14 +135,12 @@ export const Header = () => {
         <div className="col-lg-4 my-2 p-0 text-center d-none d-md-flex">
           <div className="row d-flex align-items-center">
             <div className="col-4 p-0">
-              <div className="d-flex align-items-center">
+              <div
+                className="d-flex align-items-center cursor-pointer gap-1"
+                onClick={openModalHandler}
+              >
                 <LiaEnvelopeSolid className="fs-3" />
-                <input
-                  type="text"
-                  id="org"
-                  className="form-input border-0 w-100 fs-15px"
-                  placeholder="SUBSCRIBE"
-                />
+                <p className="text-muted p-0 m-0"> SUBSCRIBE</p>
               </div>
               <hr className="opacity-100 m-0" />
             </div>
@@ -156,6 +170,7 @@ export const Header = () => {
           ) : null}
         </div>
       </Row>
+      <SubscribeModal open={openModal} close={closeModalHandler} />
     </Container>
   );
 };

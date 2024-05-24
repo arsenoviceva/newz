@@ -58,11 +58,11 @@ export const LatestNewsCarousel = () => {
       <div className="position-title title-without-corner">BUSINESS</div>
       <SlArrowLeft
         onClick={onBackClick}
-        className={`left bg-white fs-2 text-muted border border-secondary p-1`}
+        className="left bg-white fs-2 text-muted border border-secondary p-1 cursor-pointer"
       />
       <SlArrowRight
         onClick={onNextClick}
-        className="right bg-white fs-2 text-muted border border-secondary p-1"
+        className="right bg-white fs-2 text-muted border border-secondary p-1 cursor-pointer"
       />
 
       <Carousel indicators={false} controls={false} activeIndex={index}>
